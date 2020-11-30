@@ -1,0 +1,26 @@
+create database banco;
+use banco;
+
+
+create table funcionario
+(
+id int auto_increment primary key,
+nome varchar(40),
+email varchar(40),
+senha varchar(8),
+tipoF int
+);
+
+create table produtos
+(
+id int primary key auto_increment,
+nome varchar(40),
+descricao varchar(300),
+valor double,
+quantidade int
+);
+
+insert into funcionario (nome,email,senha,tipoF) values ('Eder','vendedor@adm.com','eder123',1),('Lusquinha','gerente@adm.com','eder123',2),('Igor','supervisor@adm.com','eder123',3);
+
+insert into produtos (nome,descricao,valor,quantidade) values ('God of War','Muitos anos se passaram desde que Kratos teve sua vingança contra os deuses do Olimpo, e agora ele vive com seu filho Atreus em Midgard. O jogo começa após a morte da segunda esposa de Kratos e mãe de Atreus, Faye.',199.00,15),('eFootball PES 2021',' O eFootball PES 2021 Season Update tem a mesma jogabilidade do aclamado eFootball PES 2020 com diversas atualizações de times e jogadores para refletir a nova temporada.',200.00,5),('FIFA 21','o FIFA 21 eleva o jogo com novos recursos: ... Experimente uma autenticidade incomparável que proporciona a experiência mais realista do Maior Jogo do Mundo, incluindo a UEFA Champions League e a CONMEBOL Libertadores.',250.00,0);
+
