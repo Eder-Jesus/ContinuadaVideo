@@ -18,7 +18,7 @@ public class Conexao {
     {
         vConexao = new BasicDataSource();
         vConexao.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        vConexao.setUrl("jdbc:mysql://3.82.218.44:3306/banco?useTimezone=true&serverTimezone=UTC");
+        vConexao.setUrl("jdbc:mysql://35.174.116.30:3306/banco?useTimezone=true&serverTimezone=UTC");
         vConexao.setUsername("root");
         vConexao.setPassword("bandtec");
     }
